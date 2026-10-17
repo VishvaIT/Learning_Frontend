@@ -1,0 +1,29 @@
+/* root -- is a local variable -- using the variable inside the css but h1,p are global*/
+:root{
+    /* Variable has certain rules no . ,no space  */
+    --width:calc(100% - 300px);
+    /* --width:calc(10% + 500px); -- any +,-,*,/  any functions can be used */
+    --min:min(1000px,3000px);
+    --max:max(1000px,3000px);
+    /* contains 3 values -- used insted of media query --- lapto,mobile,desktop views in media query we will write seperate but here single line */
+    --clamp:clamp(200px,50vw,500px)
+
+}
+
+
+p::after{
+    content:"--"attr(data-name)
+}
+.product::after{
+    content:">>"attr(data-price)
+}
+
+div{
+    border: 1px solid black;
+    /* Using mathematical functions */
+    /* width: var(--width);
+    height: var(--min);
+    width: var(--max); */
+    width: var(--clamp);
+    
+}

@@ -1,0 +1,36 @@
+ul{
+    border: solid 10px blue;
+    border-radius: 10px;
+    background-color: coral;
+}
+.Vishva{
+    background-color: cyan;
+    width: 100%;
+}
+#Ravanan{
+    background-color: blueviolet;
+    padding: 10px;
+}
+li{
+    border: solid;
+}
+h1{
+    background-color: red;
+    color: white;
+}
+.Vishva{
+    text-align: center;
+}
+#Ravanan{
+    font-size: 30px;
+}
+h1,Vishva,p{
+    border-style: solid;
+}
+body{
+    background-color: skyblue;
+    font-family: cursive;
+}
+*{
+    margin-left: 2cm;
+}

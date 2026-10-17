@@ -1,0 +1,14 @@
+:root{
+    /* Assigning the value in the variable name */
+    --main-color:green;
+    --main-font-size:20px;
+    --bg-color:grey;
+}
+
+h1{
+    /* using the variable stored color using var() */
+    color: var(--main-color);
+}
+button{
+    background-color: var(--bg-color);
+}

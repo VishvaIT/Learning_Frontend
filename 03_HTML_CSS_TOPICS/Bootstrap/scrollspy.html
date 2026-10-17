@@ -1,0 +1,50 @@
+<!-- Like navbar inside clicking the home,contack.. it shows the particular page -->
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">      
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">      
+<style>
+     section {
+         height: 500px;
+         padding: 50px;         
+         }     
+</style> 
+</head>  
+<body>  
+    <nav id="navbar" class="navbar navbar-dark bg-dark sticky-top">     
+        <div class="container">          
+            <a class="navbar-brand" href="#">Travel</a>          
+            
+            <ul class="nav">             
+                <li class="nav-item">                 
+                    <a class="nav-link text-white" href="#home">Home</a>             
+                </li>              
+                <li class="nav-item">                 
+                    <a class="nav-link text-white" href="#places">Places</a>            
+                </li>              
+                <li class="nav-item">                 
+                    <a class="nav-link text-white" href="#contact">Contact<a>           
+
+                </li>         
+            </ul>      
+        </div> </nav>  
+        <div data-bs-spy="scroll"      data-bs-target="#navbar"      data-bs-smooth-scroll="true">      
+            <section id="home">         
+                <h2>Home</h2>         
+                <p>Welcome to our travel website.</p>     
+            </section>      
+            <section id="places">         
+                <h2>Places</h2>         
+                <p>Explore beautiful destinations.</p>    
+            </section>      
+            <section id="contact">         
+                <h2>Contact</h2>         
+                <p>Contact us for booking.</p>     
+            </section>  
+        </div>  
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js "></script>  
+</body> 
+</html> 

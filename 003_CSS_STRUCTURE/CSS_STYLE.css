@@ -1,0 +1,23 @@
+/* Tag Selector */
+ul{
+    /* border-style: solid; */
+    background-color: brown;
+    /* border-width: 20px; */
+    border-radius: 10px;
+    /* All property in one line(Shorthand Property ) */
+    border:solid 80px blue;
+}
+/* Class Selector */
+.Ext_Vishva{
+    background-color: blueviolet;
+    width: 80px;
+}
+/* ID Selector */
+#Ext_Senthuren{
+    background-color: aqua;
+    padding: 10px;
+}
+/* Group Selector */
+li{
+   border: solid;
+}

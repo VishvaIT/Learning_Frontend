@@ -1,0 +1,25 @@
+<!-- popover  -- show Side message box when we click the buttom -->
+ <!DOCTYPE html> 
+ <html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body> 
+     <div class="container mt-5">      
+        <button type="button"               class="btn btn-info"             data-bs-toggle="popover"             title="Paris"             data-bs-content="Paris is the capital city of France.">   
+         Paris Info 
+        </button>  
+     </div>  
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js "></script> 
+      <script>     
+         let popover = document.querySelectorAll(         
+            '[data-bs-toggle="popover"]'     
+        );     
+         popover.forEach(function(item) {         
+            new bootstrap.Popover(item);    
+             });  
+             
+      </script>  
+</body> 
+</html> 

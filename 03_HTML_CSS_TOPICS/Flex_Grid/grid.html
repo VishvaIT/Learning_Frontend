@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* auto auto auto === 3column in one row 
+            if auto auto === 2 column in each row*/
+            grid-template-columns: auto auto ;
+            /* grid-template-columns: 200px 200px 1fr; 
+            can use this also instead of auto
+            
+            1fr -- > fraction of available space  (Takes the remaining entire available space) */
+
+            /* repeat used when we do after the add continously -- amazon add products 
+            
+            can give inside repeat ==> auto ,fr,px*/
+
+            grid-template-columns: repeat(3,1fr);
+
+            /* between each row and column   */
+            gap: 20px;
+
+        }
+        .container div{
+            background-color: violet;
+        }
+
+        /* Grid used to split the web */
+
+        .container1{
+            display: grid;
+            grid-template-areas:
+            /* two cover the entire width two header and footer are given */
+            "header header"
+            "sidebar main"
+            "footer footer";
+            grid-template-columns: 100px 1fr;
+        }
+        .header{
+            grid-area: header;
+            background-color: aqua;
+            padding: 20px;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: blueviolet;
+            padding: 20px;
+        }
+        .main{
+            grid-area: main;
+            background-color: brown;
+            padding: 20px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: cadetblue;
+            padding: 20px;
+        }
+
+        .container2{
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 80px 200px;
+            background-color: blue;
+        }
+
+        .container3{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .container4{
+            display: grid;
+            grid-template-columns: 200px 200px;
+            gap: 20px;
+            
+        }
+        .item{
+            background-color: aqua;
+            padding: 40px;
+        }
+        .item1{
+            grid-column: span 2;
+        }
+        .item2{
+            grid-row: span 2 ;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid => Arrange the items in rows and columns
+    grid => two dimensional (rows and columns) -->
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+
+
+    <br><br><br>
+
+    <div class="container1">
+        <div class="header">header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="main">main</div>
+        <div class="footer">footer</div>
+    </div>
+
+    <br><br><br>
+
+     <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+
+    <br><br>
+    <div class="container3">
+        <img src="./Muruga.jpeg" alt="">
+        <img src="./Muruga.jpeg" alt="">
+        <img src="./Muruga.jpeg" alt="">
+        <img src="./Muruga.jpeg" alt="">
+    </div>
+
+    <br><br>
+
+    <div class="container4">
+        <div class="item">item1</div>
+        <div class="item item1">item2</div>
+        <div class="item item2">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+
+    </div>
+</body>
+</html>

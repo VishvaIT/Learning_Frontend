@@ -1,0 +1,37 @@
+form{
+    /* horizontal order -form width(left-right) */
+    width:300px ;
+    /* 30px -- gap all sides
+    auto -- centres the form
+     */
+    margin: 30px auto;
+    /* Space inside the form(Content<->Border) */
+    padding: 30px;
+    background-color:aquamarine; /*hexcolor#*/
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+input,select{   /*Group Selector*/
+    width: 100%; /*Brings below the label -- full width */
+    padding: 10px; /*Each Selection inside -- Space inside*/
+    /* Space outside */
+    margin: 8px 0 15px 0; /*top , left ,buttom , right 
+    (Clock wise) */
+    border: 1px solid black; /*border*/
+    border-radius: 5px;
+}
+/* Using Attribute Selector */
+input[type="radio"]{
+    width: auto;
+}
+input[type="checkbox"]{
+    width: auto;
+}
+input[type="submit"]{
+    background-color: blanchedalmond;
+    cursor: pointer;
+    color: black;
+}
+h1{
+    text-align: center;
+}

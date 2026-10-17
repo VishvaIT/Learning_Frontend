@@ -1,0 +1,13 @@
+table{
+    border: 1px solid red;  
+    border-collapse: collapse;  /*Turns into single line*/
+}
+thead,th{
+    border: 3px solid green;
+}
+tbody{
+    border: 3px solid rgb(255, 0, 179);
+}
+tfoot{
+    border: 3px solid blue;
+}

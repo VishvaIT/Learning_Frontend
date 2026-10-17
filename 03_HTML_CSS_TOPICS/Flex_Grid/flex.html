@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        /* Flex should be given to the entire container */
+        .container{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* Justify content have more properties 
+            */
+            /* justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: flex-end;
+            justify-content: flex-end;
+            gap: 20px;
+            row-gap:10px;
+            column-gap:10px;
+            */
+            flex-wrap: nowrap;
+            /* Brings in one row */
+        }
+        img{
+            width: 150px;
+
+        }
+        /* 
+        display--flex(contaniner)
+            Main Axis ---> flex items direction controls(justify-content)
+
+            Cross Axis --->opposite direction(align-items(vertical or horizontal))
+            
+        */
+        .container1{
+            border: 2px solid red;
+            flex-direction: row;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+        }
+        .box{
+            background-color: aqua;
+            height: 100px;
+            width: 80px;
+            display: flex;
+            /* justify-content --- brings the each box (BOX1---word center)center */
+            justify-content: center;
+            
+
+
+            /* align items-- inside that box brings center the text */
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex => Arrange the items in one direction(1D)--row or column -->
+
+    <div class="container">
+        <img src="./Muruga.jpeg" alt="">
+        <img src="./Muruga.jpeg" alt="">
+        <img src="./Muruga.jpeg" alt="">
+        <img src="./Muruga.jpeg" alt="">
+        <img src="./Muruga.jpeg" alt="">
+    </div>
+
+    <br><br>
+
+    <div class="container1">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+</body>
+</html>

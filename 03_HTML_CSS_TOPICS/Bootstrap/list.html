@@ -1,0 +1,35 @@
+<!-- Creating the badge in grouping list(span) -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ </head>
+ <body>
+
+
+    <!--list-group -- to group the list
+    list-group-flush -- to remove the outline border
+    list-group-numbered  -- to provide numbered list
+    list-group-horizontal --provides horizontal list 
+    list-group-item-action  -- when hover the list bg color will be grey effect-->
+    active  -- hightlight
+    disabled  -- dim
+    rounded-pill -- circle shape badge
+    image-thumbnail  -- while color border like frame for the image(rounded corners,circle,thumbnail)
+
+    <ul class="list-group list-group-horizontal "   >
+        <li class="list-group-item list-group-item-primary list-group-item-action d-flex justify-content-between">Home<span class="badge bg-primary rounded-pill">1</span></li>
+        <li class="list-group-item list-group-item-action d-flex justify-content-between active">About<span class="badge bg-success">2</span></li>
+        <li class="list-group-item list-group-item-action d-flex justify-content-between disabled">Contact<span class="badge bg-warning rounded-pill">3</span></li>
+    </ul>
+
+
+    <img src="./Break points.png" class="img-thumbnail" alt="">
+
+
+    <!-- Task -- create profile card (skillls in badge)  -- using bootstrap -->
+ </body>
+ </html>

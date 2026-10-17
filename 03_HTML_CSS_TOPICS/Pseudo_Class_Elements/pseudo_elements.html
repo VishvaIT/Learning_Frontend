@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            color: aqua;
+        }
+        li::marker{
+            color: red;
+        }
+        ::selection{  
+            /* Paaricular selection leads with the given color */
+            color: rgb(226, 43, 122);
+        }
+        h1::before{
+            content: "Hey "; 
+            /* Can give image (set their height and width), emojis  */
+        }
+        h1::after{
+            content: " Thank You";
+        }
+        /* Use for position(absolute,relative.(create a cart and do). -- before and after) */
+
+        /* Opacity */
+        img{
+            /*  values = 0.0 to 1.0 */
+            opacity: 0.7;
+        }
+        div{
+            width: 300px;
+            height: auto;
+            border: 1px solid red;
+            opacity: 0.2;
+            background-color: brown;
+        }
+      div:hover{    /* : -->Hover the entire div */
+            opacity: 1.0;
+        }
+        p{
+            display: none;
+            background-color: aquamarine;
+        }
+        .box:hover p{
+            display: block;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    Writting style for particular part == pseudo elements
+    Use -- > ::
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore et esse repellendus maiores eos eum enim quos, corrupti asperiores saepe dignissimos quis iure fugit architecto vero amet obcaecati tempora laudantium sequi eaque necessitatibus dolorum inventore. Porro doloremque pariatur maiores ratione illum natus possimus, voluptates repellat deleniti excepturi consequuntur accusamus harum, dolore illo veritatis aspernatur.</p>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <h1>Welcome</h1>
+
+    <!-- Opacity == is used for image transparent -->
+     <img src="image.png" alt="">
+
+     <div>
+        <h1>Hii</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, deserunt.</p>
+     </div>
+
+     <br><br>
+     <div class="box">Opacity
+        <p>Display</p>
+     </div>
+
+     
+</body>
+</html>

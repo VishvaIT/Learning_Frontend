@@ -1,0 +1,42 @@
+/* Transform changes the position ,size,rotation/shape of an element
+   */
+
+   /* Syntax: 
+   transform:function(value); */
+
+   /* translate() --move
+   rotate() --rotate
+   scale() --resize
+   skew() --tilt */
+    
+.transform{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    /* (x,y) -- move -- any one axis can be also given  */
+    /* transform: translate(100px,50px);
+     */
+     /* transform: translateX(100px);
+     transform: translateY(-50px); ---negative(opposite) -- direction*/
+
+     /* ----------------------------------- */
+    transform: rotate(45deg);
+    /* transform: rotate(65deg) */
+
+    transform: scaleX(0.5);
+    transform: scaleY(2);
+    /* 1 -- original size
+       1.5 -- 150%
+        2  -- 200%
+        0.5 -- 50%
+    */
+
+    /* Skew -- changes the angle of the image */
+    transform: skewX(20deg);
+    transform: skewY(30deg);
+
+
+    /* Every both angle can be given on common brackets or separate for each axis */
+       
+
+}

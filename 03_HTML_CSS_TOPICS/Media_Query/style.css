@@ -1,0 +1,35 @@
+body{
+    background-color: violet;
+}
+/* change background coloe for different screens
+   max-width & min-width check by syntax*/
+
+
+   /* max-width---0 to the given value(break point) */
+@media(max-width:600px){
+    body{
+        /* if you see the scree in 600px break point the color becomes violet to aqua */
+        background-color: aqua;
+    }
+}
+
+@media(max-width:750px){
+    body{
+        /* if you see the scree in 600px break point the color becomes violet to blue  for tablet */
+        background-color: blue;
+    }
+}
+
+@media(max-width:900px){
+    body{
+        /* if you see the scree in 600px break point the color becomes violet to blue  for laptop */
+        background-color: green;
+    }
+}
+
+/* min-width---from break point to end the style will be applied */
+@media(min-width:600px){
+    body{
+        background-color: brown;
+    }
+}

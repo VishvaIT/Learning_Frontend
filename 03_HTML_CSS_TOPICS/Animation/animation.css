@@ -1,0 +1,82 @@
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    /* keyframe -- animation name */
+    /* animation-name: changeColor; */
+    
+    /* how much time  */
+    animation-duration: 2s;
+    animation-delay: 1s;
+    /* how many times  can use infinity */
+    animation-iteration-count: 3;
+    
+}
+.animation1{
+    animation-name: changeColor1;
+    animation-duration: 4s;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+@keyframes changeColor{
+    from{
+        background-color: aqua;
+    }
+    to{
+        background-color: blue;
+    }
+}
+
+/* Stage wise also we can do  */
+@keyframes changeColor{
+    0%{
+        background-color: aqua;
+        /* opacity -- fade color ranges from 0 to 1 */
+        opacity: 1;
+    }
+    50%{
+        background-color: rgb(0, 255, 76);
+        opacity: 0.5;
+    }
+    100%{
+        background-color: blueviolet;
+        opacity: 0.2;
+    }
+}
+
+/* If you need smooth effect means */
+/* linear - same speed
+ease in - start slowly
+ease out - end slowly
+ease-in-out -start and end slowly */
+
+@keyframes changeColor1{
+    0%{
+        background-color: black;
+        width: 400px;
+        height: 100px;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+    50%{
+        background-color: brown;
+        width: 600px;
+        height: 100px;
+        animation-timing-function: ease-in;
+        opacity: 0.5;
+    }
+    75%{
+        background-color: aqua;
+        opacity: 0.3;
+        animation-timing-function: ease-out;
+        width: 800px;
+    }
+    100%{
+        background-color: blue;
+        opacity: 0.1;
+        width: 900px;
+        animation-timing-function: ease-in-out;
+    }
+}

@@ -1,0 +1,31 @@
+/* Giving image in the css - using url for html */
+div{
+     width: 900px;
+    height: 900px;
+    border : 1px solid red;
+    background-image: url("images.png");
+   /* Avoid repeats of image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+   
+
+
+    
+}
+header{
+    background-color: aqua;
+}
+footer{
+    background-color: aqua;
+}
+main{
+    background-color: blueviolet;
+}
+nav{
+    background-color: gray;
+}
+marquee{
+    font-size: 30px;
+}

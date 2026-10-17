@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container p{
+            /* Apply will be to all elements -- Descendant combinator */
+            color: blue;
+        }
+        .container > p{
+            /* Takes/Apply style to the direct first children -- child combinator */
+            color: aqua;   
+        }
+        h1+p{
+            /* Agacent sibling means near to h1 which para(p)  -- immediate next */
+            color: brown;
+        }
+        h2~p{
+            /* <!-- General sibling -- all following siblings it will apply using symbol ~ --> */
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Combinators - Relationship between Elements</h1>
+    <h2>Types - 4</h2>
+    <!-- Descendant combinator -- apply style to all elements
+    Child combinator -- using this symbol >
+    Adjacent combinator  -- using symbol +
+    General combinator -->
+    
+    <div class="container">
+        <p>Welcome 1</p>
+        <section>
+            <p>Welcome 2</p>
+        </section>
+    </div>
+    <!-- Adjacent sibling -->
+    <h1>heading</h1>
+    <p>para 1</p>
+    <p>para 2</p>
+
+    <!-- General sibling -- all following siblings it will apply using symbol ~ -->
+    <h2>heading</h2>
+    <p>para 1</p>
+    <p>para 2</p>
+
+</body>
+</html>

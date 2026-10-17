@@ -1,0 +1,59 @@
+/* div{
+    background-color: aqua;
+    height: 100px;
+    width: 300px;
+    overflow: scroll;
+} */
+/* div{
+    background-color: aqua;
+    height: 100px;
+    width: 300px;
+    overflow: visible;
+} */
+/* 
+ div{
+    background-color: aqua;
+    height: 100px;
+    width: 300px;
+    overflow: hidden;
+} */
+
+/*div{
+    background-color: aqua;
+    height: 100px;
+    width: 300px;
+    overflow: auto; 
+    
+} /*default scroll like */
+
+
+
+.container{
+    border: 1px solid red;
+    background-color: yellow;
+    width: 300px;
+    overflow-x: auto;
+}
+.overflow{
+    width: 600px;
+}
+
+/* div{
+    background-color: aqua;
+    height: 100px;
+    width: 500px;
+    overflow-y: scroll;
+} */
+
+/* span{
+    background-color: violet;
+    visibility: visible;
+} */
+
+span{
+    background-color: violet;
+    visibility: hidden;
+}
+
+/* 11/09/2026 
+   task(Profile card,login page,landing page,restarunt menu,contack form) */

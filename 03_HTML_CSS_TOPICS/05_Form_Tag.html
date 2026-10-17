@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+    <link rel="stylesheet" href="/Frontend/03_HTML_CSS_TOPICS/05_Form_Tag.css">
+
+</head>
+<body>
+    <!-- Form Container 
+        form 
+    -->
+    <!-- Form Tags
+        label--identification(Inline Tag)
+        input--user data(Inline Tag) 
+    
+     
+    -->
+    <!-- Attribute
+             type - decides the type of user input
+             placeholder - empty text for identification
+             minlength & maxlength - text input
+             min & max - number input
+             required - compulsory should be filled(mandatory field)
+             for & id - connects each label    tag and input tag
+             name - key_value pair stores data in backend
+             value -fixes the optional inputs value(radio)
+             action - where the given data need to be transferred
+             method - How data need to be transfered 
+    --> 
+    
+    <!-- 
+        name - key
+        user input - value
+        
+        {
+        key : value;
+        username : "Senthuren";
+        
+        }
+
+        name -- inside input tag contains the key for the particular input---store in backend
+        
+        {  backend-store
+        
+        User_Name : "Senthuren";
+        User_Age : 20;
+        User_Email : vish@gamil.com;
+        Gender : male;
+        Language : Js,React;
+        Course : backend;
+
+        }
+
+        {
+        Backend Process using NAME Attribute
+
+        name attribute              user input
+              |                         |
+             key                      value      
+        }
+
+        value - fixes the optional inputs value(radio)
+        INSIDE FORM TAG
+        action---gives url where the data to be stored eg:"Localhost/login"
+        method--which way that data should be stored (get,post and dialog)
+    -->
+
+    <!-- CRUD
+    C--CREATE--POST--Creates new data and host in backend
+
+    R--READ--GET--only see cant edit & only reading the data and no modification done
+
+    U--UPDATE--PUT--modifies the created data
+
+    D--DELETE--delete the created data
+
+    
+    
+    
+    -->
+    <h1>Application Form</h1>
+
+    <form action="">
+
+
+        <label for="u_name">User Name :</label>
+        <input type="text" placeholder="Enter Your Name" id="u_name" minlength="3" maxlength="20" required name="User_Name">
+
+        <br><br>
+
+        <label for="u_age">User Age :</label>
+        <input type="number" placeholder="Enter Your Age" id="u_age" min="18" name="User_Age" required>
+
+        <br><br>
+
+        <label for="u_email">User Email :</label>
+        <input type="email" placeholder="Enter Your Email" id="u_email" name="User_Email" required>
+
+        <br><br>
+        <fieldset>
+        <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        </fieldset>
+
+
+        <!-- <label for="" >Gender :</label> -->
+        <!-- name(key)--(common for both) value(value to be stored ) for radio  -->
+
+        
+
+
+        <br><br>
+
+
+        <label for=""><b>Languages</b></label>
+        
+        <br>
+
+        <label for="html">HTML</label>
+        <input type="checkbox" name="Language" id="html" value="HTML">
+
+        <br>
+
+        <label for="css">CSS</label>
+        <input type="checkbox" name="Language" id="css" value="CSS">
+
+        <br>
+
+        <label for="js">JS</label>
+        <input type="checkbox" name="Language" id="js" value="JS">
+
+        <br>
+
+        <label for="react">React</label>
+        <input type="checkbox" id="react"  name="Language" value="REACT">
+
+        <br><br>
+
+        <select name="Courses" id="">
+            <option value="">Select Couse</option>
+            <option value="Frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="Fullstack">Full Stack</option>
+            
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <!-- SSC PORTAL--Task -->
+
+
+    </form>
+
+    
+</body>
+</html>

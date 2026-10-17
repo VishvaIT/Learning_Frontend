@@ -1,0 +1,32 @@
+/* combining both  because otherwise  it will start from 0 for max */
+
+
+@media(max-width:600px){
+    body{
+        background-color: aqua;
+    }
+}
+@media(min-width:601px) and (max-width:900px){
+    body{
+        background-color: blue;
+    }
+}
+@media(min-width:900px){
+    body{
+
+        background-color: gray;
+    }
+}
+.container{
+    width: 100%;
+    border: 1px solid black;
+    height: 500px;
+}
+.box{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid red;
+}
+h1{
+    font-size: 1rem;
+}

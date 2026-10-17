@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover{
+             background-color: aqua;
+             color: green;
+             width: 100px;
+             height: 30px;
+             cursor: pointer;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:visited{
+            color: green;
+        }
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color:aqua;
+        }
+        li:nth-child(3){
+            color: blue;
+        }
+        input:focus{
+            background-color: yellow;
+            
+        }
+        input{
+            border: 1px solid red;
+            outline: none;
+        }
+        li:nth-child(odd){
+            /* Styling the odd numbers in the list  --- can do for even also just in parameter use even */
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Writting style for particular class(state) === pseudo class
+    Use --> :
+    Example = Hovering
+    syntax
+        selector:pseudo_class{
+            property-name:value
+        } 
+      -=/>
+      <br><br>
+
+    <button>Submit</button>
+<br><br>
+    <a href="https://www.flipkart.com/">Flipkart</a>
+        
+    <input type="text">
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+.text_styling{
+     /* Text color & font */
+    color: aqua;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+
+    /* Background */
+    background-color: aliceblue;
+
+    /* Border */
+    border-style: solid;
+    border-color: salmon gray green blue;  /*can add upto 4 colors -- clock wise direction */
+    border-width: 20px;
+    border-radius: 20px;
+
+     /* Text Decoration */
+    text-decoration: underline;
+    text-decoration-color: deeppink;
+
+    /* Alignment */
+    text-align:justify;     /*Aligns text to the common(Inline Comment)  centre,start,justify*/
+
+    /* Spacing */
+    line-height: 1.4;  /*be in cm*/
+    letter-spacing: 3px;
+    word-spacing: 10px;
+
+     /* Text Transform */
+    text-transform: uppercase; /*capitlize,...*/
+
+    /* Text Effects */
+    text-shadow : 3px 7px 5px gray; /* left-right(Shadow moves)
+    top-bottom(Shadow moves)
+    blur(+,-)
+    color(Text color) */
+
+     /* Paragraph  formatting   */
+    text-indent : 50px; /*Indent(Tab space) the first line of the paragraph*/
+    white-space: wrap;  /*text wrapping control -- go to the next Line ---> default in  browser */  
+
+
+
+
+}

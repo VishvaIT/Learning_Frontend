@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- (Self - closing )Not doesnot require closing Tag
+     src(source)- tells the browser to find the image file
+     alt(alternative name for the image) - used when image canot load-->
+     <!-- Copy image address - to get image address -->
+      <!-- save image as - to save the image -->
+    <img style="width: 300px;height: 250px;"   src=Muruga.jpeg alt="Murugaa">
+
+
+
+    <!-- This is used when you use multiple audio with common control tag (Accepts only mp3)-->
+    <audio controls>
+          <!-- The browser sees the first source, successfully loads it(shows only first audio (others are like backup-alterative like)), and stops. It doesn't play the same audio 3 times. -->
+        <source src="sample-3s.mp3">
+        <source src="sample-3s.mp3">
+        <source src="sample-3s.mp3">
+    </audio>
+
+     <!-- Requires control(autoplay,loop etc..) (Accepts only mp3)-->
+     <audio src="sample-3s.mp3" controls></audio>
+
+    <!--controls used to show video otherwise it will be just a image  -->
+
+    <video  style="width: 200px;height: 200px;"  src="sample-5s.mp4" controls></video>
+
+    <br><br>
+    <!-- Used when we use multiple video tags -->
+    <video controls style="width: 300px;height: 250px;">
+        <!-- The browser sees the first source, successfully loads it(shows only the first sucessvideo), and stops. It doesn't play the same video 3 times. -->
+        <source src="sample-5s.mp4">
+        <source src="sample-5s.mp4">
+        <source src="sample-5s.mp4">
+    </video>
+     
+    <!-- <iframe> is used to show another webpage/content(embeded another-youtube,map,google) inside your current webpage.   eg:can use map iframe(Location)-->
+     <iframe 
+     width="560" 
+     height="315"
+    src="https://www.youtube.com/embed/1MjMMQ1EW1E?si=S6l7Jsa5xrUJZBN-" title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; 
+        autoplay; 
+        clipboard-write; 
+        encrypted-media; 
+        gyroscope; 
+        picture-in-picture; 
+        web-share"
+    referrerpolicy="strict-origin-when-cross-orig    in" 
+    allowfullscreen>
+    </iframe>
+
+     <img src="iframe.png" style="width: 200px;" alt="Youtube-share-embeded-copy iframe">
+    
+
+</body>
+</html>
